@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MatchReparo</title>
+
+</head>
+
+<body>
+
+    <header>
+        <img width="800" height="120" src="img/logo.jpg" alt="logo do site">
+        <div id="perfil">
+            <img width="60" height="50" src="img/perfil.jpg" alt="foto de perfil do usuário">
+            <a href="../../Alex Junio/Login.html" target="_blank"> Entrar </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="contratar">
+            <div class="titulo">
+                <h2>Contratar Serviços</h2>
+                <button id="buttonFechar">
+                    <img src="img/buttonFechar.svg" alt="fechar">
+                </button>
+            </div>
+
+            <div class="textoApresentacao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, officiis
+                tempore unde, sequi commodi inventore cumque debitis nesciunt quaerat porro labore blanditiis iusto
+                voluptas corrupti sed, illum fuga praesentium eligendi.
+            </div>
+
+            <div class="descricaoServico">
+                <label for="descricao">Descrição do serviço:</label>
+                <textarea id="descricao" name="descricao" placeholder="Digite a descrição do serviço"></textarea>
+            </div>
+
+            <div class="container">
+
+                <div class="dataHora">
+                    <p>Data</p>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="data-inicio">Inicio:</label>
+                            <input type="date" id="data-inicio" name="data-inicio">
+                        </div>
+                        <div class="form-field">
+                            <label for="data-termino">Término:</label>
+                            <input type="date" id="data-termino" name="data-termino">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dataHora">
+                    <p>Horario</p>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="horario-inicio">Horário:</label>
+                            <input type="time" id="horario-inicio" name="horario-inicio">
+                        </div>
+                        <div class="form-field">
+                            <label for="horario-termino">Horário:</label>
+                            <input type="time" id="horario-termino" name="horario-termino">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="buttonEnviar">Enviar</button>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
