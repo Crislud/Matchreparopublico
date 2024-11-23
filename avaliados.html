@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliações - MatchReparo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        header {
+            position: relative; 
+            width: 100%; 
+            height: 120px; 
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120px; 
+            background-color: #1b8aca; 
+            z-index: 1; 
+        }
+
+        .header-image {
+            position: absolute; 
+            top: 20px; 
+            left: 20px; 
+            width: auto; 
+            height: 80px; 
+            object-fit: cover; 
+            z-index: 2; 
+        }
+
+        #perfil {
+            position: fixed; 
+            top: 10px; 
+            right: 20px; 
+            text-align: center; 
+            z-index: 10; 
+        }
+
+        #perfil img {
+            width: 60px; 
+            height: 50px; 
+        }
+
+        #perfil a {
+            color: #fdfeff; 
+            font-size: 16px; 
+            text-decoration: underline; 
+            display: block; 
+            margin-top: 5px; 
+        }
+
+        main {
+            flex: 1; 
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .review {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f1f1f1;
+        }
+
+        .review img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .review-content {
+            flex: 1;
+        }
+
+        .review-content h3 {
+            margin-bottom: 5px;
+        }
+
+        .review-content p {
+            margin: 0;
+        }
+
+        .stars {
+            color: #f39c12;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-bg"></div> 
+        <img class="header-image" src="logo.png" alt="Cabeçalho - Imagem Representativa">
+    </header>
+
+    <div id="perfil">
+        <img src="perfil2.png" alt="Perfil"> 
+        <a href="http://pucminas.br" target="_blank">Entrar</a>
+    </div>
+
+    <main>
+        <h1>Avaliações dos Serviços</h1>
+
+        <div class="review">
+            <img src="pessoa sorrindo.jpg" alt="Usuário 1">
+            <div class="review-content">
+                <h3>João da Silva</h3>
+                <p>Excelente serviço! O eletricista foi muito profissional e resolveu meu problema rapidamente. Recomendo!</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="idoso sorrindo.jpg" alt="Usuário 2">
+            <div class="review-content">
+                <h3>Maria Oliveira</h3>
+                <p>Fiquei muito satisfeita com a instalação elétrica. O atendimento foi ótimo e o trabalho bem feito!</p>
+                <div class="stars">⭐⭐⭐⭐</div>
+            </div>
+        </div>
+
+        <div class="review">
+            <img src="bombadoserio.jpg" alt="Usuário 3">
+            <div class="review-content">
+                <h3>Carlos Pereira</h3>
+                <p>Ótimo atendimento e serviço de qualidade. Voltarei a contratar quando precisar!</p>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contato: contato@matchreparo.com</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
