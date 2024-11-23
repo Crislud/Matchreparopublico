@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MatchReparo</title>
+  <link rel="stylesheet" href="style-Cadastro.css">
+  <script src="indes.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<header>
+  <img class="logo" width="800" height="120" src="LogoM.png">
+
+  <div id="perfil">
+    <a href="CadastroPF.html">
+      <img width="60" height="50" src="perfil2.png">
+      </button>
+      <a href="Login.html"> Entrar </a>
+  </div>
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="CadastroPJ.html">Perfil</a></li>
+      <li><a href="Login.html">Entrar</a></li>
+    </ul>
+  </nav>
+</header>
+<div>
+  <h2>CRIAR CONTA</h2>
+</div>
+
+
+
+<div id="Opcao">
+
+  <form class="inputmark" action="CadastroPJ.html">
+    <input class="PF" type="radio" value="1" onclick="redirecionar('CadastroPF.html')">Pessoa Fisica
+    <input type="radio" checked value="2">Pessoa Juridica<br>
+  </form>
+
+  <form name="form_login" action="CadastroPF.html">
+
+    <input type="text" placeholder="Nome Fantasia:" id="username">
+    <input type="text" placeholder="Razão Social:" id="subname"><br>
+
+    <input type="text" placeholder="Cidade:" id="Cidade">
+    <input type="text" placeholder="CNPJ:" id="cpf"><br>
+
+    <input type="text" placeholder="UF:" id="uf">
+    <input type="email" placeholder="Email:" id="email"><br>
+    <input type="text" placeholder="Telefone:" id="telefone">
+
+
+    <input type="text" placeholder="Data de Abertura de Empresa:" id="data"><br>
+
+    <input type="password" placeholder="Senha:" id="password">
+    <input type="password" placeholder="Confirma senha:" id="ConPassword">
+
+    <button type="submit" class="botao" onclick="cadastrarLogin()">Salvar</button>
+  </form>
+</div>
+
+
+
+
+</html>

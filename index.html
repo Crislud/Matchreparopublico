@@ -1,108 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Configura o layout da página para ser responsivo -->
-    <title>MatchReparo</title> <!-- Título da página, exibido na aba do navegador -->
+  <title>MatchReparo</title>
+  <link rel="stylesheet" href="style-Cadastro.css">
+  <script src="indes.js"></script>
 
-    <!-- Link para o arquivo de estilos (CSS) externo -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Link para o CDN da Font Awesome para utilizar ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
-<body>
-    <!-- Cabeçalho da página -->
-    <header>
-        <!-- Logo da empresa ou do site -->
-        <img class="logo" width="800" height="120" src="img/logo.png" alt="Logo do MatchReparo">
+<header>
+  <img class="logo" width="800" height="120" src="LogoM.png">
 
-        <!-- Perfil com imagem e link para o login -->
-        <div id="perfil">
-            <a href="CadastroPJ.html">
-                <img class="perf" width="60" height="50" src="img/perfil1.jpg" alt="Botão de imagem">
-                </button>
-                <a href="Login.html" id="Entrar"> Entrar </a>
-        </div>
-    
-        <nav class="navbar">
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="perfil pessoa fisica.html">Perfil</a></li>
-                <li><a href="Login.html">Entrar</a></li>
-            </ul>
-        </nav>
-    </header>
-    <script src="script.js"></script>
+  <div id="perfil">
+    <a href="CadastroPJ.html">
+      <img class="perf" width="60" height="50" src="perfil2.png" alt="Botão de imagem">
+      </button>
+      <a href="/MatchRepato/Login.html"> Entrar </a>
+  </div>
 
-    <!-- Seção principal da página -->
-    <section class="main-content">
-        <!-- Título da seção -->
-        <h1>Grande variedade de serviços</h1>
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="CadastroPJ.html">Perfil</a></li>
+      <li><a href="Login.html">Entrar</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <!-- Descrição ou subtítulo da seção -->
-        <p>Encontre os melhores profissionais</p>
 
-        <!-- Caixa de pesquisa -->
-        <div class="search-box">
-            <input type="text" placeholder="O que você precisa?"> <!-- Campo de entrada para a pesquisa -->
-            <button class="search-button"> <!-- Botão de pesquisa -->
-                <i class="fas fa-search"></i> <!-- Ícone de pesquisa -->
-            </button>
-        </div>
+<div>
+  <h2>CRIAR CONTA</h2>
+</div>
 
-        <!-- Seção de opções de serviços -->
-        <div class="service-options">
-            <!-- Serviço 1: Pintura -->
-            <div class="service">
-                <a href="index2.html">
-                <img src="img/pintores.jpg" alt="Serviço de Pintura"> <!-- Imagem representando o serviço -->
-                <p>Serviço de Pintura</p> <!-- Nome do serviço -->
-            </a>
-            </div>
+<div id="Opcao">
 
-            <!-- Serviço 2: Eletricista -->
-            <div class="service">
-                <a href="index2.html">
-                <img src="img/eletricistas.png" alt="Eletricista">
-                <p>Eletricista</p>
-            </a>
-            </div>
+  <form action="CadastroPJ.html">
+    <input class="PF" type="radio" checked value="1">Pessoa Fisica
+    <input type="radio" value="2" onclick="redirecionar('/Cadastro de Pessoa Juridica/CadastroPJ.html')">Pessoa Juridica<br>
+  </form>
 
-            <!-- Serviço 3: Montador de Móveis -->
-            <div class="service">
-                <a href="index2.html">
-                <img src="img/montadores.jpg" alt="Montador de Móveis">
-                <p>Montador de Móveis</p>
-            </div>
-        </a>
-        </div>
-    </section>
+  <form name="form_login" action="/submit" method="post">
+    <div>
+      <input type="text" placeholder="Nome:" id="username">
+      <input type="text" placeholder="Sobrenome:" id="subname"><br>
+    </div>
 
-    <!-- Rodapé da página -->
-    <footer>
-        <div class="sobre-projeto">
-            <!-- Título do rodapé -->
-            <h2>Sobre o Projeto</h2>
+    <div>
+      <input type="text" placeholder="Cidade:" id="Cidade">
+      <input type="text" placeholder="CPF:" id="cpf"><br>
+    </div>
 
-            <!-- Descrição do projeto -->
-            <p>Este projeto busca resolver a desconexão entre consumidores e prestadores de serviços locais, oferecendo
-                uma plataforma eficiente, transparente e acessível. Em um contexto onde consumidores têm dificuldade em
-                encontrar prestadores confiáveis e disponíveis para serviços essenciais, e onde prestadores enfrentam
-                desafios para divulgar e conquistar clientela em um mercado competitivo, a solução visa facilitar essa
-                conexão. O objetivo é simplificar a busca por serviços, promover o crescimento dos prestadores
-                independentes e melhorar a experiência dos clientes no processo de contratação e execução de serviços.
-            </p>
-        </div>
-    </footer>
-</body>
+    <div>
+      <input type="text" placeholder="UF:" id="uf">
+      <input type="email" placeholder="Email:" id="email"><br>
+    </div>
+
+    <div>
+      <input type="text" placeholder="Telefone:" id="telefone">
+      <input type="text" aria-invalid="true" placeholder="dd/mm/aa" id="data"><br>
+    </div>
+
+    <div>
+      <input type="password" minlength="6" placeholder="Senha:" id="password">
+      <input type="password" placeholder="Confirma senha:" id="ConPassword">
+    </div>
+
+
+    <button type="button" class="botao" onclick="cadastrarLogin()">Cadastrar</button>
+
+  </form>
+
+</div>
+
+
 
 </html>
-

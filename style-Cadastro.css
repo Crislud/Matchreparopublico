@@ -1,0 +1,210 @@
+/* Para que o cabeçalho fique sem margens*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Associação pelo NOME DO ELEMENTO */
+h1 {
+    color: white;
+}
+
+a {
+    color: white;
+    font-family: "Franklin Gothic Medium";
+    margin-right: 64px;
+    font-size: 20px;
+    float: right;
+}
+
+/* Asociação pelo ID DO ELEMENTO */
+#tit_1 {
+    font-size: 40px;
+}
+
+/* Associação pela CLASSE DO ELEMENTO */
+.noticias {
+    font-family: arial;
+}
+
+#lista {
+    background-color: #1b8aca;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+header {
+
+    width: 100%;
+    background-color: #1b8aca;
+    padding: 5px;
+
+}
+
+/*#MatchReparo{
+    width: 89%;
+    background-color: #1b8aca;
+    font-family: Georgia;
+    float: right;
+    font-size: 90px;
+}*/
+#perfil {
+    width: 8%;
+    float: right;
+    margin-top: 25px;
+    padding: auto;
+    cursor: pointer;
+    height: auto;
+}
+
+
+
+#Opcao {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 15px;
+    width: 500px;
+    /* Largura ajustável */
+    height: auto;
+    /* Altura automática baseada no conteúdo */
+    padding: 30px;
+    /* Espaçamento interno */
+    margin: 20 auto;
+}
+
+h2 {
+    font-family: "Franklin Gothic Medium";
+    width: 200px;
+    font-size: 30px;
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+input {
+    padding: 10px 20px;
+    /* Borda com cor */
+    border: 2px solid #a6a6a6;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    /* Espaçamento entre os campos */
+    cursor: pointer;
+   
+}
+
+.botao {
+    background-color: #5271ff;
+    color: white;
+    /* Remove as bordas */
+    border: none;
+    margin-left: 120px;
+    margin-right: auto;
+    padding: 10px 60px;
+    /* Cantos arredondados */
+    border-radius: 30px;
+    /* Sombra para destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Muda o cursor para pointer ao passar o mouse */
+    cursor: pointer;
+    background-image: url('entrar2.png');
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: 42px 11px;
+    font-family: "Franklin Gothic Medium";
+}
+.login{
+
+    margin-left: auto;
+    margin-right: 300px;
+    margin-top: 200px;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+
+    img.logo {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      height: 30px;
+    }
+
+    #perfil {
+      margin-top: 10px;
+      width: 20px;
+      height: 20px;
+      display: none;
+    }
+
+    .menu-icon {
+      display: flex;
+      margin-top: -45px;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #8b9091;
+      width: 20%;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      text-align: right;
+      
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      text-align: center;
+      padding: 0px 0;
+      
+    }
+
+}
