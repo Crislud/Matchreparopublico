@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #1b8aca;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.logo h1 {
+  margin-left: 10px;
+}
+
+#perfil {
+  width: 2%;
+  float: right;
+  margin-top: 25px;
+  padding: auto;
+  cursor: pointer;
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+a {
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  margin-right: 64px;
+  font-size: 20px;
+  float: right;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 330%;
+  margin-left: 3%;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+.menu {
+  width: 380px;
+  margin-left: 3%;
+  height: -1%;
+  float: left;
+  background-color: rgb(235, 231, 231)
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 10px black;
+}
+
+li.active {
+  background-color: rgb(235, 231, 231);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li i {
+  margin-right: 20px;
+  font-size: 20px;
+
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+li:hover {
+  background-color: #40C0FF;
+  color: white
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.info-container {
+  width: 700px;
+  margin-right: 12%;
+  float: right;
+  padding: -10%
+}
+
+.info-table {
+  width: 110%;
+  border-collapse: collapse;
+
+
+}
+
+.info-table td {
+  padding: 20px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+Input {
+  width: 50%;
+  height: 40px;
+  border: #e0e0e0;
+  background-color: #e0e0e0;
+
+}
+
+
+button {
+  background-color: #4A6CFF;
+  width: 230PX;
+  float: left;
+  padding: 20px;
+  color: white;
+  border: none;
+  border-radius: 115px;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 8%;
+  margin-top: 3%;
+  right: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: none;
+  gap: 20px;
+}
+
+@media (max-width : 1000px) {
+  .menu-icon {
+    display: flex;
+    margin-top: -45px;
+  }
+
+  img.logo {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+  }
+
+  img.perf {
+    display: none;
+    margin: auto;
+    width: 20px;
+    height: 17px;
+    margin-top: -50px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #1b8aca;
+    width: 20%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: right;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 0px 0;
+  }
+
+  #Entrar {
+    color: red;
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: 60px;
+    margin-top: auto;
+    display: none;
+  }
+}

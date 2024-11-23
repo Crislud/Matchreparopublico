@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt,br">
+
+<head>
+   <title>Perfil Pessoa Fisica.</title>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="cache-control" content="no-cache">
+
+
+   <link rel="stylesheet" href="style.css">
+
+
+
+
+<head>
+
+      <header>
+
+         <img class="logo" width="800" height="120" src="logo1.jpeg">
+         
+
+         <div id="perfil">
+            <img class="perf" width="60" height="50" src="entrar.jpeg">
+            <a id="Entrar" href="Login.html"> Entrar </a>
+         </div>
+
+         <nav class="navbar">
+            <div class="menu-icon" onclick="toggleMenu()">
+               <div class="bar"></div>
+               <div class="bar"></div>
+               <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+               <li><a href="PerfilpessoaFisica.html">Perfil</a></li>
+               <li><a href="Login.html">Entrar</a></li>
+            </ul>
+         </nav>
+
+
+      </header>
+   <body>
+      <h2>Olá,(Nome do usuario)</h2>
+
+
+
+      <div class="menu">
+         <ul>
+            <li class="active">
+               <img src="PERFIL.png">
+               <i class="fas fa-user"></i>
+               <a href="PerfilpessoaFisica.html">Perfil</a>
+
+            </li>
+            <li>
+               <img src="logo historico.png">
+               <i class="fas fa-history"></i>
+               <a href="Historico.html">Histórico</a>
+            </li>
+            <li>
+               <img src="Logo chat.png">
+               <i class="fas fa-comment"></i>
+               <a href="index3.html">Chat</a>
+            </li>
+            <li>
+               <img src="logo logout.png">
+               <i class="fas fa-sign-out-alt"></i>
+               <a href="Login.html">Logout</a>
+            </li>
+         </ul>
+      </div>
+      <div class="info-container">
+         <table class="info-table">
+            <form name="form_login" action="perfilpessoafisica.html" method="post"></form>
+
+            <tr>
+               <td> Nome:<input type="text" placeholder="Nome*" required=""><br> </td>
+
+            </tr>
+            <tr>
+               <td> Data de Nascimento: <input type="date" name="dt" Data de nascimento*" value="Data"> <br></td>
+            </tr>
+            <tr>
+               <td>E-mail: <input type="email" placeholder="  E-mail"><br> </td>
+            </tr>
+            <tr>
+               <td>Telefone: <input type="tel" placeholder="   Telefone celular*" maxlength="9"><br></td>
+            </tr>
+            <tr>
+               <td>Endereço: <input type="text" placeholder="   Endereço*" value=""><br></td>
+            </tr>
+            <tr>
+               <td>CPF: <input type="password" maxlength="11 " value="CPF"><br></td>
+            </tr>
+            <tr>
+               <td>Senha: <input type="password" maxlength="10" value=""><br></td>
+            </tr>
+
+
+            </form>
+         </table>
+      </div class="Button">
+
+      <div class="BUTTON">
+         <h3></h3>
+         <button id="btneditar">
+            EDITAR PERFIL</button>
+         <script src="perfil fisico.js"></script>
+
+   </body>
+
+
+</html>

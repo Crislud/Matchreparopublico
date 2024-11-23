@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #1b8aca;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: white;
+  }
+  
+  .logo h1 {
+    margin-left: 10px;
+  }
+  
+  #perfil {
+    width: 9%;
+    float: right;
+    margin-top: 25px;
+    padding: auto;
+    cursor: pointer;
+  }
+  
+  
+  main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  a {
+    color: white;
+    font-family: "Franklin Gothic Medium";
+    margin-right: 7%;
+    font-size: 20px;
+    float: left;
+  }
+  
+  h2 {
+    font-size: 35px;
+    line-height: 330%;
+    margin-left: 3%;
+      
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  .menu {
+    width: 380px;
+    margin-left: 3%;
+    height: -1%;
+    float: left;
+    background-color: rgb(235, 231, 231)
+  }
+  
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 10px black ;
+  }
+  
+  li.active {
+    background-color: rgb(235, 231, 231);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  li i {
+    margin-right: 20px;
+    font-size: 20px;
+  
+  }
+  
+  li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  li:hover {
+    background-color: #40C0FF;
+    color: white
+  }
+  
+  
+  /* Estilo da Seção de Resultados */
+  .resultados { 
+    display:grid ; /* Uso de grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Colunas responsivas */
+    gap: 25px; /* Espaçamento entre as colunas */
+    width: 50%
+  }
+  
+  .resultados{
+    float: right;
+    margin-right: 13%;
+  }
+  
+  /* Estilo dos Cartões de Resultados */
+  .card {
+    background-color:rgb(235, 231, 231); /* Fundo branco */
+    padding: 1px; /* Preenchimento interno */
+    width:calc(50%-20px);
+    height: 65%;
+    border: none;
+    border-radius: 35px; /* Cantos arredondados */  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease; /* Transição suave */
+    display: inline-block
+    
+  
+  }
+  
+  
+  .card:hover {
+    transform: scale(1.05); /* Aumenta o cartão ao passar o mouse */
+    background-color: #40C0FF;
+    color: white ;
+    
+  }
+    
+  
+  /* Estilo das Imagens dentro dos Cartões */
+  .image-container {
+    display: flex; /* Flexbox para centralizar a imagem */
+    margin-bottom: 10px; /* Espaçamento inferior */float: none;
+    float: left;
+  }
+  
+  .image-container img {
+    width: 100px; /* Largura das imagens de perfil */
+    height:109px;/* Altura das imagens de perfil */
+    border-radius: 20%; /* Torna a imagem circular */
+  }
+  
+  
+  /* Estilo dos Títulos dos Cartões */
+  .card h3 {
+    text-align:center;
+    line-height: 50%;
+    font-size: 18px; /* Tamanho da fonte */
+    margin : 5px; /* Espaçamento inferior */
+   
+    
+    
+  }
+  
+  /* Estilo das Descrições nos Cartões */
+  .card p {
+    font-size: 14px; /* Tamanho da fonte */
+    color: #777; /* Cor cinza claro para o texto */
+    text-align: center;
+    
+  
+    
+   
+  }
+  
+  /* Estilo das Estrelas de Avaliação */
+  .stars {
+    color: #ffd700; /* Cor dourada para as estrelas */
+    font-size: 35px; /* Tamanho das estrelas */
+    text-align:center;
+    height: 120px;
+  }
+    
+  
+  
