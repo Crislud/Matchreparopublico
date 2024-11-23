@@ -1,0 +1,260 @@
+/* Reset básico - remove margens e espaçamentos padrão dos elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilos para links */
+a {
+    color: white;
+    font-family: "Franklin Gothic Medium";
+    margin-right: 64px;
+    font-size: 20px;
+    float: right;
+    /* Posiciona os links à direita */
+}
+
+/* Cabeçalho - layout flexível */
+header {
+    width: 100%;
+    background-color: #1b8aca;
+    padding: 5px;
+}
+
+
+/* Estilos para links de login no cabeçalho */
+
+#perfil {
+    width: 8%;
+    float: right;
+    margin-top: 25px;
+    padding: auto;
+    cursor: pointer;
+}
+
+
+/* Estilos principais */
+.main-content {
+    text-align: center;
+    /* Centraliza o texto */
+    padding: 20px;
+}
+
+/* Título principal */
+.main-content h1 {
+    font-size: 36px;
+    /* Tamanho da fonte do título */
+    color: #333;
+    /* Cor do título */
+}
+
+/* Texto do parágrafo principal */
+.main-content p {
+    font-size: 18px;
+    color: #666;
+    /* Cor mais suave para o parágrafo */
+}
+
+/* Caixa de pesquisa */
+.search-box {
+    margin: 20px auto;
+    /* Centraliza horizontalmente */
+    width: 60%;
+    /* Define a largura da caixa de pesquisa */
+}
+
+/* Estilos para o campo de entrada (input) na pesquisa */
+.search-box input {
+    width: 100%;
+    /* Ocupa 100% da largura disponível */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    /* Borda cinza clara */
+    border-radius: 5px 0 0 5px;
+    /* Arredonda apenas os cantos esquerdos */
+}
+
+/* Mantém o layout flexível da caixa de pesquisa */
+.search-box {
+    margin: 20px auto;
+    width: 50%;
+    /* Ajusta a largura */
+    display: flex;
+    /* Layout flexível */
+}
+
+/* Faz o input ocupar o espaço disponível */
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+/* Botão de pesquisa */
+.search-button {
+    padding: 10px;
+    background-color: #007BFF;
+    /* Cor azul padrão */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    /* Arredonda os cantos direitos */
+    transition: background-color 0.3s ease;
+    /* Animação de mudança de cor */
+}
+
+/* Ícone dentro do botão de pesquisa */
+.search-button i {
+    font-size: 18px;
+    /* Define o tamanho do ícone */
+}
+
+/* Efeito hover no botão de pesquisa */
+.search-button:hover {
+    background-color: #0056b3;
+    /* Cor ao passar o mouse */
+}
+
+/* Seção de serviços */
+.service-options {
+    display: flex;
+    justify-content: center;
+    /* Centraliza as opções de serviço */
+    gap: 20px;
+    /* Espaçamento entre os serviços */
+    margin-top: 20px;
+}
+
+/* Estilos individuais de cada serviço */
+.service {
+    text-align: center;
+    /* Centraliza o conteúdo de cada serviço */
+}
+
+/* Estilo das imagens de cada serviço */
+.service img {
+    width: 150px;
+    /* Largura fixa da imagem */
+    height: 150px;
+    /* Altura fixa da imagem */
+    border-radius: 10px;
+    /* Arredonda levemente os cantos da imagem */
+}
+
+/* Texto explicativo abaixo de cada serviço */
+.service p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Estilos para o rodapé */
+footer {
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    /* Cor de fundo clara */
+    padding: 20px;
+}
+
+/* Seção de informações sobre o projeto no rodapé */
+footer .sobre-projeto {
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+/* Título da seção de informações no rodapé */
+footer .sobre-projeto h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Texto do parágrafo no rodapé */
+footer .sobre-projeto p {
+    font-size: 16px;
+    color: #666;
+    max-width: 1500px;
+    margin: 0 auto;
+    /* Centraliza o texto */
+}
+.nav-links {
+    list-style: none;
+    display: none;
+    gap: 10px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+ 
+.menu-icon .bar {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+ 
+.nav-links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+ 
+.nav-links li {
+    display: inline;
+}
+ 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 10px;
+}
+
+@media (max-width: 1000px) {
+
+
+img.logo {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    height: 30px;
+}
+.menu-icon {
+    display: flex;
+    margin-top: -10px;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #8b9091;
+    width: 20%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    text-align: right;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links li {
+    text-align: center;
+    padding: 0px 0;
+}
+#perfil {
+    display: none;
+}
+}
+

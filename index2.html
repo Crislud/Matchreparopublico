@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchReparo</title>
+    <!-- Link para o CSS personalizado -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- Link para Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Logo do site -->
+        <img class="logo" src="img/logo.png" alt="MatchReparo Logo" width="800" height="120">
+
+        <!-- Seção de perfil com link para login -->
+        <div id="perfil">
+            <a href="CadastroPJ.html">
+                <img class="perf" width="60" height="50" src="img/perfil1.jpg" alt="Botão de imagem">
+                </button>
+                <a href="Login.html" id="Entrar"> Entrar </a>
+        </div>
+        <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="CadastroPJ.html">Perfil</a></li>
+            <li><a href="Login.html">Entrar</a></li>
+        </ul>
+    </nav>
+    </header>
+    <script src="script2.js"></script>
+
+    <!-- Conteúdo principal da página -->
+    <section class="main-content">
+        <!-- Caixa de pesquisa com botão -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Pesquisar serviços...">
+            <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Seção contendo filtros e resultados -->
+        <div class="filters-and-results">
+            <!-- Filtros disponíveis para pesquisa -->
+            <div class="filtros">
+                <h2>Filtros</h2>
+
+                <!-- Filtro por cidade -->
+                <label for="cidade">Cidade</label>
+                <select id="cidade">
+                    <option value="bh">Belo Horizonte, MG</option>
+                    <option value="sp">São Paulo, SP</option>
+                    <option value="itb">Itabom, MG</option>
+                    <option value="psg">Porto Seguro, BA</option>
+                    <option value="rj">Rio de Janeiro, RJ</option>
+                    <option value="curitiba">Curitiba, PR</option>
+                    <option value="salvador">Salvador, BA</option>
+                    <option value="recife">Recife, PE</option>
+                    <option value="fortaleza">Fortaleza, CE</option>
+                    <option value="brasilia">Brasília, DF</option>
+                </select>
+
+                <!-- Filtro por bairro -->
+                <label for="bairro">Bairro</label>
+                <select id="bairro">
+                    <option value="centro">Centro</option>
+                    <option value="santa_tereza">Santa Tereza</option>
+                    <option value="savassi">Savassi</option>
+                    <option value="funcionarios">Funcionários</option>
+                    <option value="belvedere">Belvedere</option>
+                    <option value="pampulha">Pampulha</option>
+                    <option value="lourdes">Lourdes</option>
+                </select>
+
+                <!-- Filtro por avaliação (estrelas) -->
+                <label for="estrelas">Estrelas</label>
+                <input type="number" id="estrelas" value="5" max="5" min="0">
+            </div>
+
+            <!-- Resultados dos serviços filtrados -->
+            <div class="resultados">
+                <!-- Exemplo de card de serviço com dados fictícios -->
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Miguel Santos">
+                    </div>
+                    <h3>Miguel Santos</h3>
+                    <p>Belo Horizonte, MG<br>Carpinteiro</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Matue">
+                    </div>
+                    <h3>Matue</h3>
+                    <p>São Paulo, SP<br>Carpinteiro</p>
+                    <p>Cantor</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <!-- Outras opções de profissionais com diferentes serviços -->
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Alex">
+                    </div>
+                    <h3>Alex</h3>
+                    <p>Eletricista</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Mychael">
+                    </div>
+                    <h3>Mychael</h3>
+                    <p>Mecânico</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Bruno">
+                    </div>
+                    <h3>Bruno</h3>
+                    <p>Encanador</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Davi">
+                    </div>
+                    <h3>Davi</h3>
+                    <p>Carpinteiro</p>
+                    <div class="stars">★★★★</div>
+                </div>
+
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Lucas">
+                    </div>
+                    <h3>Lucas</h3>
+                    <p>Marceneiro</p>
+                    <div class="stars">★★★★</div>
+                </div>
+
+                <div class="card">
+                    <div class="image-container">
+                        <img src="img/carpinteiro.png" alt="Caio">
+                    </div>
+                    <h3>Caio</h3>
+                    <p>Funilaria e Pintura Automotiva</p>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

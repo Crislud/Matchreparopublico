@@ -1,0 +1,251 @@
+/* Reset Global e Configurações Básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Estilo dos Links */
+a {
+    color: white; /* Cor do texto do link */
+    font-family: "Franklin Gothic Medium"; /* Fonte específica para links */
+    margin-right: 64px; /* Espaçamento à direita */
+    font-size: 20px; /* Tamanho da fonte */
+    float: right; /* O link ficará alinhado à direita */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    width: 100%;
+    background-color: #1b8aca;
+    padding: 5px;
+}
+
+/* Estilo da Seção de Perfil no Cabeçalho */
+#perfil {
+    width: 8%;
+    float: right;
+    margin-top: 25px;
+    padding: auto;
+    cursor: pointer;
+}
+
+
+/* Estilo do Conteúdo Principal */
+.main-content {
+    padding: 20px; /* Espaçamento ao redor do conteúdo principal */
+}
+
+/* Contêiner para Pesquisa e Resultados */
+.search-container {
+    display: flex; /* Alinha os elementos de busca lado a lado */
+    justify-content: flex-end; /* Alinha a barra de pesquisa à direita */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.search-container input {
+    width: 76.1%; /* Largura da barra de pesquisa */
+    padding: 12px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px 0 0 4px; /* Canto arredondado para a esquerda */
+}
+
+.search-button {
+    padding: 10px; /* Preenchimento interno */
+    background-color: #1b8aca; /* Fundo azul */
+    color: white; /* Cor do texto branco */
+    border: none; /* Remove borda */
+    border-radius: 0 4px 4px 0; /* Arredonda os cantos à direita */
+    cursor: pointer; /* Cursor de clique */
+    transition: background-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+
+.search-button i {
+    font-size: 18px; /* Tamanho do ícone de busca */
+}
+
+.search-button:hover {
+    background-color: #0f5b77; /* Muda a cor ao passar o mouse */
+}
+
+/* Estilo para Filtros e Resultados */
+.filters-and-results {
+    display: flex; /* Alinha filtros e resultados lado a lado */
+    justify-content: space-between; /* Distribui o espaço entre filtros e resultados */
+}
+
+/* Estilo da Barra de Filtros */
+.filtros {
+    width: 250px; /* Largura fixa da barra de filtros */
+    background-color: #f0f0f0; /* Fundo cinza claro */
+    padding: 15px; /* Preenchimento interno */
+    border-radius: 8px; /* Canto arredondado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+    margin-top: -65px; /* Sobe a posição do filtro */
+}
+
+.filtros h2 {
+    margin-bottom: 15px; /* Espaçamento inferior */
+    color: #111213; /* Cor preto no título dos filtros */
+}
+
+.filtros label {
+    display: block; /* Os rótulos ocupam toda a largura */
+    margin-bottom: 5px; /* Espaçamento inferior dos rótulos */
+    color: #333; /* Cor cinza escuro */
+}
+
+.filtros input,
+.filtros select {
+    width: 100%; /* Campos ocupam 100% da largura disponível */
+    padding: 8px; /* Preenchimento interno */
+    margin-bottom: 10px; /* Espaçamento inferior dos campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilo da Seção de Resultados */
+.resultados {
+    display: grid; /* Uso de grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Colunas responsivas */
+    gap: 20px; /* Espaçamento entre as colunas */
+    width: calc(100% - 270px); /* Compensa a largura da barra de filtros */
+}
+
+/* Estilo dos Cartões de Resultados */
+.card {
+    background-color: white; /* Fundo branco */
+    padding: 20px; /* Preenchimento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease; /* Transição suave */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta o cartão ao passar o mouse */
+}
+
+/* Estilo das Imagens dentro dos Cartões */
+.image-container {
+    display: flex; /* Flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+.image-container img {
+    width: 60px; /* Largura das imagens de perfil */
+    height: 60px; /* Altura das imagens de perfil */
+    border-radius: 50%; /* Torna a imagem circular */
+}
+
+/* Estilo dos Títulos dos Cartões */
+.card h3 {
+    font-size: 18px; /* Tamanho da fonte */
+    margin-bottom: 5px; /* Espaçamento inferior */
+}
+
+/* Estilo das Descrições nos Cartões */
+.card p {
+    font-size: 14px; /* Tamanho da fonte */
+    color: #777; /* Cor cinza claro para o texto */
+}
+
+/* Estilo das Estrelas de Avaliação */
+.stars {
+    color: #ffd700; /* Cor dourada para as estrelas */
+    font-size: 16px; /* Tamanho das estrelas */
+}
+.login{
+
+    margin-left: auto;
+    margin-right: 300px;
+    margin-top: 200px;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative; /* Adiciona a posição relativa */
+    top: 20px; /* Move o ícone para baixo */
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+
+    img.logo {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      height: 30px;
+    }
+
+    #perfil {
+      margin-top: 10px;
+      width: 20px;
+      height: 20px;
+      display: none;
+    }
+
+    .menu-icon {
+      display: flex;
+      margin-top: -45px;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #8b9091;
+      width: 20%;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      text-align: right;
+      z-index: 100; /* Garante que o menu apareça acima de outros elementos */
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links li {
+      text-align: center;
+      padding: 0px 0;
+      
+    }
+
+}
