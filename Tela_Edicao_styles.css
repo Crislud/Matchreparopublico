@@ -1,0 +1,228 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  margin-right: 64px;
+  font-size: 20px;
+  float: right;
+}
+header {
+
+    width: 100%;
+    background-color: #1b8aca;
+    padding: 5px;
+  
+  }
+  #perfil {
+    width: 8%;
+    float: right;
+    margin-top: 25px;
+    padding: auto;
+    cursor: pointer;
+}
+  .presentation-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 6000px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #foto {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .avaliacao {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avaliacao p {
+    margin-right: 10px;
+  }
+  
+  .stars {
+    display: inline-block;
+  }
+  
+  .stars::before {
+    content: "★★★★★";
+    letter-spacing: 2px;
+    background: linear-gradient(
+      90deg,
+      gold calc(var(--rating) * 20%),
+      #ccc calc(var(--rating) * 20%)
+    );
+    //*-webkit-background-clip: text;
+    color: transparent;
+    font-size: 20px;*/
+  }
+  
+  .profile-info label {
+    font-weight: bold;
+    display: block;
+    margin: 5px 0 2px;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  .contact-button {
+    display: block;
+    width: 100%;
+    background-color: #1b8aca;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+  }
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    gap: 20px;
+
+}
+  @media (max-width : 1000px)
+  {  
+    img.logo {
+      display: block;
+      margin: 0 auto;
+      width: 180px;
+      height: 30px;
+      align-items: center;
+  }
+
+  img.perf {
+      display: none;
+      margin: auto;
+      width: 20px;
+      height: 17px;
+      margin-top: -50px;
+  }
+
+
+  .login {
+      font-size: 50px;
+      margin-left: 260px;
+      margin-right: auto;
+      align-items: center;
+  }
+
+  #Entrar {
+      color: red;
+      font-size: 10px;
+      margin-left: auto;
+      margin-right: 60px;
+      margin-top: auto;
+      display: none;
+  }
+
+  h1 {
+      text-align: center;
+  }
+
+  #linha {
+      float: right;
+      margin-right: 200px;
+  }
+
+  .Cadastro1 {
+      margin-right: 270px;
+  }
+
+  .menu-icon {
+      display: flex;
+      margin-top: -45px;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #1b8aca;
+      width: 20%;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      text-align: right;
+
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links li {
+      text-align: center;
+      padding: 0px 0;
+      font-size: small;
+  }}

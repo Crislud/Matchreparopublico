@@ -17,8 +17,7 @@ function cadastrarLogin() {
 
     const user = {email, password};
     localStorage.setItem("user", JSON.stringify(user));
-
-    if (ConPassword === password && username && subname && cidade && cpf && uf && email && telefone && data) {
+    if (ConPassword == password && username && subname && cidade && cpf && uf && email && telefone && data) {
         // Simulação de armazenamento dos dados de login
         console.log("Usuário cadastrado com sucesso!");
         console.log("Nome de usuário:", username);
@@ -32,19 +31,26 @@ function cadastrarLogin() {
         console.log("Aniversario:", data);
 
         alert("Cadastro realizado com sucesso!");
-
-        // Redireciona para a Home Page após o cadastro
-        window.location.href = "PerfilPessoaJuridica.html";  // Substitua com o caminho correto da sua página inicial
-    } else {
-        alert("Por favor, preencha todos os campos corretamente.");
-    }
+        
+        // Limpa os campos do formulário após o cadastro
+        //document.getElementById('form_login').reset();
+        /*localStorage.info = document.getElementById("username").value;
+        localStorage.info = document.getElementById("subname").value;
+        localStorage.info = document.getElementById("Cidade").value;
+        localStorage.info = document.getElementById("cpf").value;
+        localStorage.info = document.getElementById("uf").value;
+        localStorage.info = document.getElementById("email").value;
+        localStorage.info = document.getElementById("telefone").value;
+        localStorage.info = document.getElementById("data").value;
+        localStorage.info = document.getElementById("password").value;*/
+      } else {
+        alert("Por favor, preencha todos os campos.");
+      }
 }
-
 function toggleMenu() {
-    const navLinks = document.getElementById('navLinks');
-    navLinks.classList.toggle('active');
+  const navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
 }
-
 function redirecionar(link) {
-    window.location.href = link;
+  window.location.href = link;
 }
